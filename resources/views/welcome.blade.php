@@ -1,16 +1,52 @@
 <x-guest-layout>
-    <section class="p-8 px-24 py-24">
 
-        <div class="relative text-center">
-            <div class="font-extrabold text-5xl mb-8">
-                Visualize. Execute. Reality.
+    <section class="">
+
+        <div class="relative overflow-hidden bg-cover bg-no-repeat bg-center">
+            <div class="" style="
+                  height: 100vh;
+                  width: 100vw;
+              ">
+                <img src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+                    class="w-full md:h-full object-cover" alt="">
             </div>
 
-            <div class="font-semibold text-2xl sm:text-base md:text-2xl lg:text-3xl text-center">“Visualize the success
-                of
-                your event,<br> from the setup to
-                the execution, and watch it become a reality.”</div>
+            <div
+                class="absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden
+            bg-fixed container mx-auto">
+                <div class="flex h-full items-left items-center justify-center text-white">
+                    <div class="relative text-center">
+                        <div class="font-extrabold text-5xl mb-8">
+                            Visualize. Execute. Reality.
+                        </div>
+
+                        <div class="font-semibold text-2xl sm:text-base md:text-2xl lg:text-3xl text-center mb-4">
+                            “Visualize
+                            the success
+                            of
+                            your event,<br> from the setup to
+                            the execution, and watch it become a reality.”</div>
+                        <div class="flex h-full items-left items-center justify-center gap-8">
+                            <div>
+                                <button
+                                    class="border rounded-full px-8 py-2 text-white bg-[#6DCFF6;] hover:bg-[#ABE7FF;]">Get
+                                    Started</button>
+                            </div>
+                            <div>
+                                <button
+                                    class="border rounded-full px-8 py-2 text-white bg-[#F69679] hover:bg-[#F69679]/25">Know
+                                    More </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
+
+    </section>
+    <section class="">
+
 
     </section>
     <section class="">

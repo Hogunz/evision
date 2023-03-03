@@ -6,6 +6,7 @@ module.exports = {
         './storage/framework/views/*.php',
         './resources/views/**/*.blade.php',
         "./node_modules/flowbite/**/*.js",
+        "./node_modules/tw-elements/dist/js/**/*.js",
         "./src/**/*.{html,js}",
     ],
 
@@ -20,5 +21,6 @@ module.exports = {
     plugins: [
         require('@tailwindcss/forms'),
         require('flowbite/plugin'),
+        require("tw-elements/dist/plugin"),
 ],
 };

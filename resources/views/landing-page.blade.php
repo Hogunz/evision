@@ -5,55 +5,55 @@
 
             <li class="mr-4">
                 <button
-                    class="hover:text-[#6DCFF6] inline-block p-4 hover:text-[#6DCFF6] border-b-2 border-transparent hover:border-gray-300  hover:text-[#6DCFF6]">EVENT
+                    class="hover:text-[#6DCFF6] inline-block p-4 border-b-2 border-transparent hover:border-gray-300">EVENT
                     COORDINATOR / PLANNER</button>
             </li>
             <li class="mr-2" role="presentation">
                 <button
-                    class="hover:text-[#6DCFF6] inline-block p-4 hover:text-[#6DCFF6] border-b-2 border-transparent hover:border-gray-300  hover:text-[#6DCFF6]">EVENT
+                    class="hover:text-[#6DCFF6] inline-block p-4 border-b-2 border-transparent hover:border-gray-300">EVENT
                     STYLISTS</button>
             </li>
             <li class="mr-2" role="presentation">
                 <button
-                    class="hover:text-[#6DCFF6] inline-block p-4 hover:text-[#6DCFF6] border-b-2 border-transparent hover:border-gray-300  hover:text-[#6DCFF6]">CATERER</button>
+                    class="hover:text-[#6DCFF6] inline-block p-4 border-b-2 border-transparent hover:border-gray-300">CATERER</button>
             </li>
             <li role="presentation">
                 <button
-                    class="hover:text-[#6DCFF6] inline-block p-4 hover:text-[#6DCFF6] border-b-2 border-transparent hover:border-gray-300  hover:text-[#6DCFF6]">HOTELS
+                    class="hover:text-[#6DCFF6] inline-block p-4 border-b-2 border-transparent hover:border-gray-300">HOTELS
                     / VENUES</button>
             </li>
             <li role="presentation">
                 <button
-                    class="hover:text-[#6DCFF6] inline-block p-4 hover:text-[#6DCFF6] border-b-2 border-transparent hover:border-gray-300  hover:text-[#6DCFF6]">FASHION
+                    class="hover:text-[#6DCFF6] inline-block p-4 border-b-2 border-transparent hover:border-gray-300">FASHION
                     DESIGNER</button>
             </li>
             <li role="presentation">
                 <button
-                    class="hover:text-[#6DCFF6] inline-block p-4 hover:text-[#6DCFF6] border-b-2 border-transparent hover:border-gray-300  hover:text-[#6DCFF6]">HAIR
+                    class="hover:text-[#6DCFF6] inline-block p-4 border-b-2 border-transparent hover:border-gray-300">HAIR
                     &amp; MAKE UP</button>
             </li>
             <li role="presentation">
                 <button
-                    class="hover:text-[#6DCFF6] inline-block p-4 hover:text-[#6DCFF6] border-b-2 border-transparent hover:border-gray-300  hover:text-[#6DCFF6]">CAKES
+                    class="hover:text-[#6DCFF6] inline-block p-4 border-b-2 border-transparent hover:border-gray-300">CAKES
                     AND SWEETS</button>
             </li>
             <li role="presentation">
                 <button
-                    class="hover:text-[#6DCFF6] inline-block p-4 hover:text-[#6DCFF6] border-b-2 border-transparent hover:border-gray-300  hover:text-[#6DCFF6]">EMCEES
+                    class="hover:text-[#6DCFF6] inline-block p-4 border-b-2 border-transparent hover:border-gray-300">EMCEES
                     / HOSTS</button>
             </li>
             <li role="presentation">
                 <button
-                    class="hover:text-[#6DCFF6] inline-block p-4 hover:text-[#6DCFF6] border-b-2 border-transparent hover:border-gray-300  hover:text-[#6DCFF6]">INVITATIONS
+                    class="hover:text-[#6DCFF6] inline-block p-4 border-b-2 border-transparent hover:border-gray-300">INVITATIONS
                     / SOUVENIRS</button>
             </li>
             <li role="presentation">
                 <button
-                    class="hover:text-[#6DCFF6] inline-block p-4 hover:text-[#6DCFF6] border-b-2 border-transparent hover:border-gray-300  hover:text-[#6DCFF6]">ENTERTAINMENT</button>
+                    class="hover:text-[#6DCFF6] inline-block p-4 border-b-2 border-transparent hover:border-gray-300">ENTERTAINMENT</button>
             </li>
             <li role="presentation">
                 <button
-                    class="hover:text-[#6DCFF6] inline-block p-4 hover:text-[#6DCFF6] border-b-2 border-transparent hover:border-gray-300  hover:text-[#6DCFF6]">OTHERS</button>
+                    class="hover:text-[#6DCFF6] inline-block p-4 border-b-2 border-transparent hover:border-gray-300">OTHERS</button>
             </li>
 
         </ul>
@@ -117,7 +117,9 @@
 
 
 
+    <section>
 
+    </section>
 
 
 </x-guest-layout>
