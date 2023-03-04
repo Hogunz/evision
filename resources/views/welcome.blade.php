@@ -2,47 +2,43 @@
 
     <section class="">
 
-        <div class="relative overflow-hidden bg-cover bg-no-repeat bg-center">
-            <div class="" style="
-                  height: 100vh;
-                  width: 100vw;
-              ">
-                <img src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+        <div class=" overflow-hidden bg-cover bg-no-repeat bg-center">
+            <div style="height: 100vh; width: 100vw;">
+                <img src="https://images.unsplash.com/photo-1481007553706-bde1ba8e91fd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
                     class="w-full md:h-full object-cover" alt="">
             </div>
-
-            <div
-                class="absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden
-            bg-fixed container mx-auto">
-                <div class="flex h-full items-left items-center justify-center text-white">
-                    <div class="relative text-center">
+            <div class="absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-fixed container mx-auto"
+                x-data="visibility" x-ref="element" @scroll.window="checkVisibility()" x-init="$nextTick(() => isTextVisible = true)">
+                <div class="flex h-full items-center justify-center text-white cursor-default">
+                    <div class="relative text-center " x-show="isTextVisible"
+                        x-transition:enter="transition ease-out duration-700 delay-500"
+                        x-transition:enter-start="opacity-0 scale-90" x-transition:enter-end="opacity-100 scale-100  "
+                        x-transition:leave="transition ease-in duration-300"
+                        x-transition:leave-start="opacity-100 scale-100" x-transition:leave-end="opacity-0 scale-90">
                         <div class="font-extrabold text-5xl mb-8">
                             Visualize. Execute. Reality.
                         </div>
-
                         <div class="font-semibold text-2xl sm:text-base md:text-2xl lg:text-3xl text-center mb-4">
-                            “Visualize
-                            the success
-                            of
-                            your event,<br> from the setup to
-                            the execution, and watch it become a reality.”</div>
-                        <div class="flex h-full items-left items-center justify-center gap-8">
+                            “Visualize the success of your event,<br> from the setup to the execution, and watch it
+                            become a reality.”
+                        </div>
+                        <div class="flex h-full items-center justify-center gap-8">
                             <div>
                                 <button
-                                    class="border rounded-full px-8 py-2 text-white bg-[#6DCFF6;] hover:bg-[#ABE7FF;]">Get
+                                    class="border border-transparent rounded-full px-8 py-2 text-white bg-[#6DCFF6;] hover:bg-[#ABE7FF;]">Get
                                     Started</button>
                             </div>
                             <div>
                                 <button
-                                    class="border rounded-full px-8 py-2 text-white bg-[#F69679] hover:bg-[#F69679]/25">Know
-                                    More </button>
+                                    class="border border-transparent rounded-full px-8 py-2 text-white bg-[#F69679] hover:bg-[#F69679]/75">Know
+                                    More</button>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-
         </div>
+
 
     </section>
     <section class="">
@@ -79,10 +75,11 @@
                             x-transition:enter-start="-translate-x-full" x-transition:enter-end="translate-x-0"
                             x-transition:leave="transition ease-in-out duration-300 transform"
                             x-transition:leave-start="translate-x-0" x-transition:leave-end="-translate-x-full">
-                            <div class="group relative cursor-pointer  pt-10 px-10  items-center justify-center ">
+                            <div
+                                class="group relative cursor-pointer  pt-10 px-10  items-center justify-center overflow-hidden  ">
 
 
-                                <img class="relative rounded-lg  transition-all  hover:delay-75 hover:opacity-75 "
+                                <img class="relative rounded-lg  transition-all  hover:delay-75 hover:opacity-75"
                                     src="https://images.unsplash.com/photo-1502635385003-ee1e6a1a742d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
                                     alt="">
                                 <div
@@ -165,66 +162,74 @@
             </button>
         </div>
     </section>
-    <section class="p-8">
+    <section class="p-8 ">
 
         <div class="grid lg:grid-cols-2 gap-4 mx-auto lg:max-w-7xl">
-            <div x-data="{ isHovered: false, isTextVisible: false }" x-on:mouseover="isHovered = true; isTextVisible = true"
-                class="p-4 md:p-8 bg-[#6DCFF6]/25 flex items-center">
-                <div x-show="isTextVisible" class="" x-transition:enter="transition ease-out duration-300"
+            <div x-data="visibility" class="p-4 md:p-8 bg-[#6DCFF6]/25 flex items-center" x-ref="element"
+                @scroll.window="checkVisibility()">
+                <div x-show="isTextVisible" class=""
+                    x-transition:enter="transition ease-out delay-300 duration-300"
                     x-transition:enter-start="opacity-0 scale-90" x-transition:enter-end="opacity-100 scale-100"
                     x-transition:leave="transition ease-in duration-300"
                     x-transition:leave-start="opacity-100 scale-100" x-transition:leave-end="opacity-0 scale-90">
                     <h1 class="font-bold text-3xl md:text-4xl text-left">Unique</h1>
-                    <h2 class="text-left text-base md:text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    <h2 class="text-left text-base md:text-lg">Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit.
                         Facilis dolore adipisci placeat.</h2>
                 </div>
             </div>
 
 
-            <div class="flex items-center">
-                <img class="w-full md:h-full object-cover"
+            <div class="flex items-center overflow-hidden cursor-pointer ">
+                <img class="w-full md:h-full object-cover  transition duration-300 ease-in-out hover:scale-110 hover:rotate-3 "
                     src="https://images.unsplash.com/photo-1510924199351-4e9d94df18a6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1474&q=80"
                     alt="">
             </div>
 
-            <div class="flex items-center">
-                <img class="w-full md:h-full object-cover"
+            <div class="flex items-center overflow-hidden cursor-pointer ">
+                <img class="w-full md:h-full object-cover transition duration-300 ease-in-out hover:scale-110 hover:rotate-3 "
                     src="https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1469&q=80"
                     alt="">
             </div>
 
-            <div class="p-4 md:p-8 bg-[#F69679]/25 flex items-center" x-data="{ isHovered: false, isTextVisible: false }"
-                x-on:mouseover="isHovered = true; isTextVisible = true">
+            <div class="p-4 md:p-8 bg-[#F69679]/25 flex items-center" x-data="visibility" x-ref="element"
+                @scroll.window="checkVisibility()">
 
-                <div x-show="isTextVisible" class="" x-transition:enter="transition ease-out duration-300 "
+                <div x-show="isTextVisible" class=""
+                    x-transition:enter="transition delay-300 ease-out duration-300 "
                     x-transition:enter-start="opacity-0 scale-90" x-transition:enter-end="opacity-100 scale-100"
                     x-transition:leave="transition ease-in duration-300"
                     x-transition:leave-start="opacity-100 scale-100" x-transition:leave-end="opacity-0 scale-90">
                     <h1 class="font-bold text-3xl md:text-4xl text-left">All in One</h1>
-                    <h2 class="text-left text-base md:text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    <h2 class="text-left text-base md:text-lg">Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit.
                         Facilis dolore adipisci placeat.</h2>
                 </div>
 
             </div>
 
-            <div class="p-4 md:p-8 bg-[#6DCFF6]/25 flex items-center" x-data="{ isHovered: false, isTextVisible: false }"
-                x-on:mouseover="isHovered = true; isTextVisible = true">
+            <div class="p-4 md:p-8 bg-[#6DCFF6]/25 flex items-center" x-data="visibility" x-ref="element"
+                @scroll.window="checkVisibility()">
 
-                <div x-show="isTextVisible" class="" x-transition:enter="transition ease-out duration-300"
+                <div x-show="isTextVisible" class=""
+                    x-transition:enter="transition delay-300 ease-out duration-300"
                     x-transition:enter-start="opacity-0 scale-90" x-transition:enter-end="opacity-100 scale-100"
                     x-transition:leave="transition ease-in duration-300"
                     x-transition:leave-start="opacity-100 scale-100" x-transition:leave-end="opacity-0 scale-90">
                     <h1 class="font-bold text-3xl md:text-4xl text-left">Reliable</h1>
-                    <h2 class="text-left text-base md:text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    <h2 class="text-left text-base md:text-lg">Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit.
                         Facilis dolore adipisci placeat.</h2>
                 </div>
 
             </div>
 
-            <div class="flex items-center">
-                <img class="w-full md:h-full object-cover"
+            <div class=" flex items-center overflow-hidden cursor-pointer">
+                <img class="w-full md:h-full object-cover transition duration-300 ease-in-out hover:scale-110 hover:rotate-3 "
                     src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
                     alt="">
+
+
             </div>
 
         </div>
@@ -256,6 +261,27 @@
 
 
     </section>
+
+    <section>
+        <div class="flex min-h-screen items-center justify-center bg-neutral-800">
+            <div class="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3">
+                <div
+                    class="group relative cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30">
+                    <div class="h-96 w-72">
+                        <img class="h-full w-full object-cover transition-transform duration-500 group-hover:rotate-3 group-hover:scale-125"
+                            src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+                            alt="" />
+                    </div>
+                    <div
+                        class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70">
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
 </x-guest-layout>
 
 <script>
@@ -283,4 +309,22 @@
             },
         };
     }
+    document.addEventListener('alpine:init', () => {
+        Alpine.data('visibility', (visible = false) => ({
+            isTextVisible: visible,
+            checkVisibility() {
+                if (this.isTextVisible) return
+                const element = this.$refs.element
+                const rect = element.getBoundingClientRect();
+                const windowHeight = window.innerHeight || document.documentElement.clientHeight;
+                const windowWidth = window.innerWidth || document.documentElement.clientWidth;
+                const visible =
+                    rect.top <= windowHeight &&
+                    rect.top + rect.height >= 0 &&
+                    rect.left <= windowWidth &&
+                    rect.left + rect.width >= 0;
+                this.isTextVisible = visible;
+            }
+        }))
+    })
 </script>
