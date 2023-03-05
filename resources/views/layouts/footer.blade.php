@@ -9,7 +9,7 @@
                 </a>
                 <div class="">
                     <p class="mt-6">
-                        eVision is an online platform that turns<br> your event into a professional and festive<br>
+                        OwlEvent is an online platform that turns<br> your event into a professional and festive<br>
                         event in no time. Created to provide a <br> reliable and trusted event resource in the
                         Philippines.
                     </p>

@@ -63,9 +63,9 @@
 
 
     <section class="p-8 px-24 py-24  mx-auto">
-        <div class="grid grid-cols-4 gap-4">
-            @for ($i = 0; $i < 20; $i++)
-                <div class="shadow-2xl max-w-xs mx-auto relative mb-4 " x-data="showSlides()">
+        <div class="grid grid-cols-3 gap-4">
+            @for ($i = 0; $i < 9; $i++)
+                <div class="shadow-2xl max-w-sm mx-auto relative mb-4 " x-data="showSlides()">
                     <div class=" flex overflow-hidden">
                         <template x-for="(chunk, index) in chunks" :key="index">
                             <template x-for="item in chunk">
@@ -76,7 +76,7 @@
                                     x-transition:leave="transition ease-in-out duration-300 transform"
                                     x-transition:leave-start="translate-x-0"
                                     x-transition:leave-end="transition-leave-end">
-                                    <img :src="item.image" class="object-center  hover:text-[#6DCFF6] max-w-xs ">
+                                    <img :src="item.image" class="object-center  hover:text-[#6DCFF6] max-w-sm ">
                                 </div>
                             </template>
                         </template>

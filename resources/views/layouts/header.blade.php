@@ -1,4 +1,4 @@
-<nav class="px-2 sm:px-4 py-2.5  absolute inset-x-0 z-40 top-0  ">
+<nav class="px-2 sm:px-4 py-2.5   z-40 inset-x-0  ">
     <div class="container flex flex-wrap items-center justify-between mx-auto  ">
         <a href="/" class="flex items-center">
             <img src="" class="h-6 mr-3 sm:h-9" alt="" />

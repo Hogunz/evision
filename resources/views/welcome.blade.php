@@ -25,7 +25,7 @@
                         <div class="flex h-full items-center justify-center gap-8">
                             <div>
                                 <button
-                                    class="border border-transparent rounded-full px-8 py-2 text-white bg-[#6DCFF6;] hover:bg-[#ABE7FF;]">Get
+                                    class="border border-transparent rounded-full px-8 py-2 text-white bg-[#6DCFF6] hover:bg-[#6DCFF6]/75">Get
                                     Started</button>
                             </div>
                             <div>
@@ -58,9 +58,6 @@
 
     <section class="container mx-auto">
 
-        <div
-            class=" text-center text-8xl font-extrabold px-24 py-24 space-x-10  text-transparent  bg-clip-text bg-gradient-to-r from-[#6DCFF6] to-[#F69679]">
-            CATEGORY</div>
 
     </section>
 
@@ -262,26 +259,6 @@
 
     </section>
 
-    <section>
-        <div class="flex min-h-screen items-center justify-center bg-neutral-800">
-            <div class="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3">
-                <div
-                    class="group relative cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30">
-                    <div class="h-96 w-72">
-                        <img class="h-full w-full object-cover transition-transform duration-500 group-hover:rotate-3 group-hover:scale-125"
-                            src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
-                            alt="" />
-                    </div>
-                    <div
-                        class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70">
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
-    </section>
 </x-guest-layout>
 
 <script>
