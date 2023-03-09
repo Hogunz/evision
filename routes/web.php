@@ -16,9 +16,23 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('/home', function () {
-    return view('landing-page');
+Route::get('/categories', function () {
+    return view('categories');
 });
+Route::get('/featured', function () {
+    return view('featured');
+});
+
+Route::get('/supplier-registration', function () {
+    return view('supplier-registration');
+});
+Route::get('/blog', function () {
+    return view('blog');
+});
+Route::get('/guides', function () {
+    return view('guides');
+});
+
 
 
 Route::get('/dashboard', function () {
