@@ -1,21 +1,18 @@
 <x-guest-layout>
 
-    <section class="border">
+    <x-category></x-category>
 
-        <ul class="flex flex-wrap items-center justify-center text-xs  ">
-            @for ($i = 0; $i < 12; $i++)
-                <li class="mr-4">
-                    <button
-                        class="hover:text-[#6DCFF6] inline-block p-4 border-b-2 border-transparent hover:border-gray-300">Caterer</button>
-                </li>
-            @endfor
-
-        </ul>
-
+    <section class="container mx-auto p-8">
+        <div class="flex flex-col">
+            <div class="text-4xl mb-2 font-bold">Event Coordinator</div>
+            <div class="text-base text-black/50 font-bold">Understanding the client's needs and objectives for the event
+                and
+                developing
+                <br>
+                a detailed plan and timeline for its execution.
+            </div>
+        </div>
     </section>
-
-
-
     <section class="p-8 px-24 py-24   mx-auto" x-data="visibility" x-ref="element" @scroll.window="checkVisibility()"
         x-init="$nextTick(() => isTextVisible = true)">
         <div class="grid grid-cols-3 gap-4" x-show="isTextVisible"

@@ -32,6 +32,10 @@ Route::get('/blog', function () {
 Route::get('/guides', function () {
     return view('guides');
 });
+Route::get('/profile', function () {
+    return view('supplier/profile');
+});
+
 
 
 

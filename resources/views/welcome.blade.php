@@ -4,13 +4,11 @@
             <div class="bg-gradient-to-b from-[#6DCFF6]/75 to-transparent" style="height: 100vh; width: 100vw; ">
 
             </div>
-            <div class="container mx-auto text-black/50 text-5xl mb-4 p-8">
-                Categories
-            </div>
+
             <div class="absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-fixed container mx-auto"
                 x-data="visibility" x-ref="element" @scroll.window="checkVisibility()" x-init="$nextTick(() => isTextVisible = true)">
-                <div class="flex h-full items-center justify-evenly p text-white cursor-default gap-12  mx-auto ">
-                    <div class="relative text-center" x-show="isTextVisible"
+                <div class="flex h-full items-center justify-evenly p  cursor-default gap-12  mx-auto ">
+                    <div class="relative text-center text-white" x-show="isTextVisible"
                         x-transition:enter="transition ease-out duration-700 delay-500"
                         x-transition:enter-start="opacity-0 scale-90" x-transition:enter-end="opacity-100 scale-100"
                         x-transition:leave="transition ease-in duration-300"
@@ -18,7 +16,8 @@
                         <div class="font-extrabold text-5xl mb-8 text-left">
                             Visualize. Execute. Reality.
                         </div>
-                        <div class="font-semibold text-4xl sm:text-base md:text-2xl lg:text-3xl text-left mb-4">
+                        <div
+                            class="font-semibold text-4xl sm:text-base md:text-2xl lg:text-3xl text-left mb-4 text-black/25">
                             “Visualize the success of your event,<br> from the setup to the execution,<br> and watch it
                             become a reality.”
                         </div>
@@ -130,6 +129,9 @@
 
 
     <section>
+        <div class="container mx-auto text-black/50 text-5xl mb-4 p-8">
+            Categories
+        </div>
         <div class=" p-8 flex flex-wrap items-center justify-center  " x-data="sample()">
             <div class=" flex overflow-hidden">
                 <template x-for="(chunk, index) in chunks" :key="index">
@@ -142,18 +144,20 @@
                             <div
                                 class="group relative cursor-pointer  pt-10 px-10  items-center justify-center overflow-hidden  ">
 
+                                <a href="/categories" class="href">
+                                    <img class="relative rounded-lg  transition-all  hover:delay-75 hover:opacity-75"
+                                        src="https://images.unsplash.com/photo-1502635385003-ee1e6a1a742d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+                                        alt="">
+                                    <div
+                                        class="absolute inset-0 flex translate-y-6 flex-col items-center justify-center px-9 text-center transition-all duration-500 group-hover:translate-y-0 ">
+                                        <p
+                                            class="mb-3 text-lg italic text-black  duration-300 opacity-0 transition-opacity group-hover:opacity-100">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis dolore
+                                            adipisci
+                                            placeat.</p>
 
-                                <img class="relative rounded-lg  transition-all  hover:delay-75 hover:opacity-75"
-                                    src="https://images.unsplash.com/photo-1502635385003-ee1e6a1a742d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
-                                    alt="">
-                                <div
-                                    class="absolute inset-0 flex translate-y-6 flex-col items-center justify-center px-9 text-center transition-all duration-500 group-hover:translate-y-0 ">
-                                    <p
-                                        class="mb-3 text-lg italic text-black  duration-300 opacity-0 transition-opacity group-hover:opacity-100">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis dolore adipisci
-                                        placeat.</p>
-
-                                </div>
+                                    </div>
+                                </a>
                                 <div class="relative text-black/50 px-6 pb-6 mt-6 text-center">
                                     <div class="flex justify-center">
                                         <span class="block font-semibold text-xl  font-dmserif   text-black">Event
@@ -295,6 +299,62 @@
             </div>
         </div>
     </section>
+
+    <section class=" bg-[#6DCFF6]/25">
+        <div class="border">
+            <div class="columns-2  md:columns-3 lg:columns-4 container mx-auto pt-8 mb-4">
+                @for ($i = 0; $i < 4; $i++)
+                    <div class="relative group transition-transform  ">
+                        <div
+                            class="absolute inset-0 rounded-3xl  bg-gradient-to-b  to-black group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70">
+                        </div>
+                        <a href="/category" class="">
+                            <img class="mb-4 rounded-3xl"
+                                src="https://images.pexels.com/photos/5690183/pexels-photo-5690183.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1600">
+                            <div
+                                class="absolute inset-0 flex translate-y-6 flex-col items-center justify-center px-9 text-center transition-all duration-500 group-hover:translate-y-0 ">
+                                <p
+                                    class="mb-3 text-lg italic text-white font-bold duration-300 opacity-0 transition-opacity group-hover:opacity-100 ">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis dolore adipisci
+                                    placeat.</p>
+                                <div
+                                    class="border border-transparent rounded hover:bg-[#F69679]  p-2 mb-3 text-base  text-white duration-300 opacity-0 transition-opacity group-hover:opacity-100">
+                                    See More</div>
+                            </div>
+                        </a>
+
+                    </div>
+
+                    <div class="relative group">
+                        <div
+                            class="absolute inset-0 rounded-3xl bg-gradient-to-b  to-black group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70">
+                        </div>
+                        <a href="" class="">
+                            <img class="mb-4 rounded-3xl hover:brightness-75 hover:contrast-50"
+                                src="https://images.pexels.com/photos/587741/pexels-photo-587741.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1260&amp;h=750&amp;dpr=1">
+                            <div
+                                class="absolute inset-0 rounded-3xl flex translate-y-6 flex-col items-center justify-center px-9 text-center transition-all duration-500 group-hover:translate-y-0 ">
+                                <p
+                                    class="mb-3 text-lg italic text-white font-bold  duration-300 opacity-0 transition-opacity group-hover:opacity-100">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis dolore adipisci
+                                    placeat.</p>
+                                <div
+                                    class="border border-transparent rounded hover:bg-[#F69679]  p-2 mb-3 text-base  text-white duration-300 opacity-0 transition-opacity group-hover:opacity-100">
+                                    See More</div>
+                            </div>
+                        </a>
+                    </div>
+                @endfor
+
+            </div>
+            <div class="container mx-auto flex justify-center p-8">
+                <a href="/featured"
+                    class="border rounded   hover:bg-[#F69679]/75 p-2  text-base text-center text-[#F69679]/75 hover:text-white cursor-pointer">
+                    Show More
+                </a>
+            </div>
+
+    </section>
     <section class="container mx-auto">
         <div class=" text-black/50 text-5xl  p-8">
             Top Supplier
@@ -302,7 +362,7 @@
 
         <div class="  p-8 grid md:grid-cols-3 lg:grid-cols-4 sm:grid-cols-2 gap-4  ">
             @for ($i = 0; $i < 4; $i++)
-                <a href="" class="href">
+                <a href="/profile" class="href">
                     <div
                         class="border rounded-b-lg drop-shadow-2xl bg-white/50 flex flex-col scale-75 hover:scale-100 ease-in-out duration-300  ">
                         <img class=" h-96  object-cover rounded-tl-md rounded-tr-md"
