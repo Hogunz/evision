@@ -20,7 +20,7 @@
             </div>
 
             <div class="">
-                <ul class="flex justify-left mb-0">
+                <ul class="flex justify-left mb-0 ">
                     <li>
                         @for ($j = 0; $j < 5; $j++)
                             <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star"
@@ -32,7 +32,9 @@
                             </svg>
                     </li>
                     @endfor
+
                 </ul>
+
             </div>
         </div>
         <hr>
@@ -52,14 +54,14 @@
                 </div>
                 <div class="">
                     <div class="text-2xl mb-2 font-bold">About This Supplier </div>
-                    <div class="flex justify-left gap-4">
+                    <div class="flex justify-left gap-4 mb-8">
                         <div class="">
                             <img class="relative z-auto top-0 w-32 h-32  rounded-full ring-2 ring-white object-cover"
                                 src="https://images.unsplash.com/photo-1555952517-2e8e729e0b44?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTV8fHBlcnNvbnxlbnwwfDF8MHx8&auto=format&fit=crop&w=500&q=60"
                                 alt="">
                         </div>
-                        <div class="flex flex-col mb-4">
-                            <div class="inset-x-0 bottom-0 text-left text-sm font-bold hover:underline cursor-pointer ">
+                        <div class="flex flex-col ">
+                            <div class="inset-x-0 bottom-0 text-left text-sm font-bold hover:underline cursor-pointer mb-4">
                                 <a href="" class="href">ItsMeCJ</a>
                             </div>
                             <div class="">
@@ -78,8 +80,70 @@
                                 </ul>
                             </div>
                         </div>
+
+                    </div>
+                    <div class="p-8 border">
+                        <p>Hi it's me CJ,
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                            been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
+                            galley of type and scrambled it to make a type specimen book. It has survived not only five
+                            centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                            It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum
+                            passages, and more recently with desktop publishing software like Aldus PageMaker including
+                            versions of Lorem Ipsum.
+
+                        </p>
+                    </div>
+
+
+                    <div class="p-8">
+                        <h1
+                            class="text-left  lg:text-2xl text-xl lg:leading-9 leading-7 text-gray-800 font-semibold">
+                            FAQ's</h1>
+                        <div class="">
+                            @for ($i = 0; $i < 4; $i++)
+                                <!-- Question 1 -->
+                                <hr class="w-full lg:mt-10 md:mt-12 md:mb-8 my-8" />
+
+                                <div class="w-full md:px-6">
+                                    <div id="mainHeading" class="flex justify-between items-center w-full">
+                                        <div class="">
+                                            <p
+                                                class="flex justify-center items-center  font-medium text-base leading-6 md:leading-4 text-gray-800">
+                                                <span
+                                                    class="lg:mr-6 mr-4  lg:text-2xl md:text-xl text-lg leading-6 md:leading-5 lg:leading-4 font-semibold text-gray-800">Q1.</span>
+                                                asdkhasdjkhasdkjh
+                                            </p>
+                                        </div>
+                                        <button aria-label="toggler"
+                                            class="focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800"
+                                            data-menu>
+                                            <img class="transform "
+                                                src="https://tuk-cdn.s3.amazonaws.com/can-uploader/faq-8-svg2.svg"
+                                                alt="toggler">
+                                            <img class="transform hidden "
+                                                src="https://tuk-cdn.s3.amazonaws.com/can-uploader/faq-8-svg2dark.svg"
+                                                alt="toggler">
+                                        </button>
+                                    </div>
+                                    <div id="menu" class="hidden mt-6 w-full">
+                                        <p class="text-base leading-6 text-gray-600 font-normal">
+                                            awdjhajwlkdhajkwdhakjwdhjkawhd</p>
+                                    </div>
+                                </div>
+                            @endfor
+                        </div>
+                    </div>
+                    <div class="p-8">
+                        <h1
+                            class="text-left  lg:text-2xl text-xl lg:leading-9 leading-7 text-gray-800 font-semibold">
+                           Reviews</h1>
+                        <div class="">
+
+                        </div>
                     </div>
                 </div>
+
             </div>
 
             <div class="container h-screen">
@@ -120,18 +184,22 @@
                             </div>
                         </div>
                         <!-- Slider indicators -->
-                      <div class= "absolute z-30 flex space-x-3 -translate-x-1/2 bottom-5 left-1/2">
-                    @for($i = 0; $i < 5; $i++)
-                        <button type="button" class="w-3 h-3 rounded-full" aria-current="{{ $i === 0 ? 'true' : 'false'}}" aria-label="Slide {{ $i + 1 }}"  data-carousel-slide-to="{{ $i }}"> </button>
-              @endfor
-                    </div>
+                        <div class="absolute z-30 flex space-x-3 -translate-x-1/2 bottom-5 left-1/2">
+                            @for ($i = 0; $i < 5; $i++)
+                                <button type="button" class="w-3 h-3 rounded-full"
+                                    aria-current="{{ $i === 0 ? 'true' : 'false' }}"
+                                    aria-label="Slide {{ $i + 1 }}"
+                                    data-carousel-slide-to="{{ $i }}">
+                                </button>
+                            @endfor
+                        </div>
                         <!-- Slider controls -->
                         <button type="button"
                             class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
                             data-carousel-prev>
                             <span
-                                class="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-                                <svg aria-hidden="true" class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800"
+                                class="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30  group-hover:bg-white/50  group-focus:ring-4 group-focus:ring-white  group-focus:outline-none">
+                                <svg aria-hidden="true" class="w-5 h-5 text-white sm:w-6 sm:h-6 "
                                     fill="none" stroke="currentColor" viewBox="0 0 24 24"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -144,8 +212,8 @@
                             class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
                             data-carousel-next>
                             <span
-                                class="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-                                <svg aria-hidden="true" class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800"
+                                class="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30  group-hover:bg-white/50  group-focus:ring-4 group-focus:ring-white  group-focus:outline-none">
+                                <svg aria-hidden="true" class="w-5 h-5 text-white sm:w-6 sm:h-6 "
                                     fill="none" stroke="currentColor" viewBox="0 0 24 24"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -167,3 +235,24 @@
 
 
 </x-guest-layout>
+
+
+<script>
+    //FAQ
+    let elements = document.querySelectorAll("[data-menu]");
+    for (let i = 0; i < elements.length; i++) {
+        let main = elements[i];
+
+        main.addEventListener("click", function() {
+            let element = main.parentElement.parentElement;
+            let indicators = main.querySelectorAll("img");
+            let child = element.querySelector("#menu");
+            let h = element.querySelector("#mainHeading>div>p");
+
+            h.classList.toggle("font-semibold");
+            child.classList.toggle("hidden");
+            // console.log(indicators[0]);
+            indicators[0].classList.toggle("rotate-180");
+        });
+    }
+</script>
