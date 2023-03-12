@@ -11,6 +11,10 @@
     <!-- Styles -->
 
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;1,900&display=swap" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
 
 
@@ -21,7 +25,7 @@
 
 </head>
 
-<body class=" scroll-smooth overscroll-contain overflow-auto font-sans ">
+<body class=" scroll-smooth overscroll-contain overflow-auto  " style="font-family: 'Lato', sans-serif;">
     <div class="min-h-screen flex flex-col justify-center ">
         <header>@include('layouts.header')</header>
         <main class="flex-grow">{{ $slot }}</main>
