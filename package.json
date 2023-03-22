@@ -21,6 +21,7 @@
     },
     "dependencies": {
         "flowbite": "^1.6.3",
+        "fullcalendar": "^6.1.4",
         "tw-elements": "^1.0.0-beta1"
     }
 }

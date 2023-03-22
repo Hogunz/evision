@@ -29,12 +29,30 @@ Route::get('/supplier-registration', function () {
 Route::get('/blog', function () {
     return view('blog');
 });
-Route::get('/guides', function () {
-    return view('guides');
+Route::get('/itsMeCJ/I-will-create', function () {
+    return view('supplier/services-profile');
 });
-Route::get('/profile', function () {
-    return view('supplier/profile');
+Route::get('/itsMeCJ', function () {
+    return view('supplier/supplier-profile');
 });
+Route::get('/blog/index', function () {
+    return view('blog/index');
+});
+Route::get('/blog/index/portfolio', function () {
+    return view('blog/portfolio');
+});
+Route::get('/user/index', function () {
+    return view('user/index');
+});
+
+
+
+Route::get('/sample', function () {
+    return view('sample');
+});
+
+
+
 
 
 
