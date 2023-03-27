@@ -1,283 +1,170 @@
 <x-guest-layout>
 
+    <div class="flex justify-between container mx-auto">
+        <!-- 1 -->
+        <div>
+            <aside class="hidden lg:block lg:w-80">
+                <div class="sticky top-36">
+                    <h3 class="sr-only">Sidebar</h3>
 
-    <div class="container mx-auto p-10 columns-1 md:columns-3 lg:columns-4 gap-4">
+                    <div
+                        class="p-6 pb-4 mt-6 mb-6 font-medium text-gray-500 bg-white border border-gray-200 rounded-lg  ">
+                        <h4 class="mb-4 font-bold text-gray-900 uppercase">Recommended topics</h4>
 
-        <div class="rounded shadow-lg">
-            <img class="w-full aspect-auto" src="https://source.unsplash.com/random/1" alt="">
-            <div class="flex flex-row p-2 gap-4 items-center">
-                <div class="">
-                    <img class="relative z-auto top-0 h-8 w-8 rounded-full ring-2 ring-white object-cover"
-                        src="https://images.unsplash.com/photo-1555952517-2e8e729e0b44?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTV8fHBlcnNvbnxlbnwwfDF8MHx8&auto=format&fit=crop&w=500&q=60"
-                        alt="">
+                        <div class="flex flex-wrap">
+                            @for ($i = 0; $i < 5; $i++)
+                                <a class="bg-[#6DCFF6] hover:bg-[#6DCFF6]/75 text-white text-sm font-medium mr-2 px-2.5 py-0.5 rounded mb-2"
+                                    href="">Caterer</a>
+                            @endfor
+                        </div>
+
+                    </div>
+                    <div class="p-6 mb-6 font-medium text-gray-500 bg-white border border-gray-200 rounded-lg  ">
+                        <h4 class="mb-4 font-bold text-gray-900 uppercase ">Become an Author</h4>
+                        <ul class="space-y-4 text-gray-500">
+                            <li><a class="flex items-start" href="">
+
+                                    <div class="mr-3"><span class="text-sm"> Would you like to make a contribution to
+                                            this blog by writing guest posts?<br>To proceed, please get in touch with us
+                                            and provide a resume of your previous writing articles.</span></div>
+                                </a></li>
+                            <a class="text-white block text-center bg-[#6DCFF6] hover:bg-[#6DCFF6]/75 focus:ring-4 focus:ring-[#6DCFF6]/50 font-medium rounded-lg text-sm px-5 py-2.5 focus:outline-none w-full"
+                                href="/contact/">Get in touch</a>
+                        </ul>
+                    </div>
                 </div>
-                <div class="inset-x-0 bottom-0 text-left text-sm font-bold hover:underline cursor-pointer ">
-                    <a href="" class="href">ItsMeCJ</a>
-                </div>
-
-                <div class="">
-                    <ul class="flex justify-left mb-0 items-center">
-                        <li>
-                            @for ($j = 0; $j < 5; $j++)
-                                <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star"
-                                    class="w-4 text-yellow-300" role="img" xmlns="http://www.w3.org/2000/svg"
-                                    viewBox="0 0 576 512">
-                                    <path fill="currentColor"
-                                        d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z">
-                                    </path>
+            </aside>
+        </div>
+        <!-- 2 -->
+        <div>
+            <div class="container max-w-max mx-auto p-8">
+                <section class="bg-white border rounded-lg shadow-inner drop-shadow-2xl p-4 mb-4">
+                    <div class="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:grid-cols-12">
+                        <div class="mr-auto place-self-center lg:col-span-7">
+                            <p class="text-base">March 24, 2023</p>
+                            <h1
+                                class="max-w-2xl mb-4 text-lg font-extrabold tracking-tight leading-none md:text-xl xl:text-2xl ">
+                                Sharing our passion for learning and discovery through our blog.</h1>
+                            <p class="max-w-2xl mb-6 font-base text-gray-500 lg:mb-8 md:text-sm lg:text-base ">
+                                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+                                unknown
+                                printer took a galley of type and scrambled it to make a type specimen book.</p>
+                            <a href="#"
+                                class="inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center text-white rounded-lg bg-[#6DCFF6] hover:bg-[#6DCFF6]/75 focus:ring-4 focus:ring-[#6DCFF6] ">
+                                Get started
+                                <svg class="w-5 h-5 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd"
+                                        d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                                        clip-rule="evenodd"></path>
                                 </svg>
-                        </li>
-                        @endfor
-                        <span>(23)</span>
-                    </ul>
-                </div>
+                            </a>
+                        </div>
+
+                        <div class="hidden lg:mt-0 lg:col-span-5 lg:flex ">
+                            <img class="rounded-lg"
+                                src="https://images.unsplash.com/photo-1679609979971-c64d9342ce0d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+                                alt="">
+                        </div>
+                    </div>
+                </section>
             </div>
-            <p class="p-4 text-black text-base">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, Nonea! Maiores et
-                perferendis eaque, exercitationem praesentium nihil.
-            </p>
+            <main class=" pb-8 bg-white lg:pb-16 mx-auto ">
+                <div class="flex justify-between px-4 mx-auto max-w-8xl">
+                    <div class="w-full container mx-auto">
+                        <article class="">
+                            <div class="container max-w-7xl mx-auto p-8">
+                                <section>
+                                    <div class="">
+                                        <span class="text-sm font-bold text-center text-gray-900 lg:mb-0 ">9 posts in
+                                            total</span>
+                                    </div>
+                                    <div
+                                        class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-2 xl:grid-cols-3 gap-4 justify-center items-center">
+
+                                        @for ($i = 0; $i < 9; $i++)
+                                            <div class="border rounded-lg shadow-inner drop-shadow-2xl p-4">
+                                                <div>
+                                                    <img class="rounded-lg"
+                                                        src="https://images.unsplash.com/photo-1674574124475-16dd78234342?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                                                        alt="">
+                                                    <div class="p-2">
+                                                        <div class="text-xs">
+                                                            March 24, 2023
+                                                        </div>
+                                                        <div class="font-bold">
+                                                            Lorem Ipsum is simply dummy
+                                                            of the printing and industry.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        @endfor
+                                    </div>
+                                </section>
+                        </article>
+                    </div>
+                </div>
+            </main>
+        </div>
+        <!-- 3 -->
+        <div class="sticky top-0">
+            <aside class="hidden lg:block lg:w-80" aria-labelledby="sidebar-label">
+                <div class=" ">
+                    <h3 id="sidebar-label" class="sr-only">Sidebar</h3>
+                    <div
+                        class="p-6 pb-4 mt-6 mb-6 font-medium text-gray-500 bg-white border border-gray-200 rounded-lg  ">
+                        <h4 class="mb-4 font-bold text-gray-900 uppercase ">Categories</h4>
+                        <ul class="space-y-4 text-gray-500">
+                            <li>
+                                @for ($i = 0; $i < 9; $i++)
+                                    <a class="flex text-left" href="">
+                                        <div class="mr-3"><span
+                                                class="text-sm transition duration-300 ease-in hover:ease-in-out hover:underline hover:underline-offset-2">Event
+                                                Coordinator / Planner</span>
+                                        </div>
+                                    </a>
+                            </li>
+                            @endfor
+
+                        </ul>
+                    </div>
+                    <div
+                        class="p-6 pb-4 mt-6 mb-6 font-medium text-gray-500 bg-white border border-gray-200 rounded-lg   ">
+                        <ul class="space-y-4 divide-y text-gray-500">
+                            @for ($i = 0; $i < 6; $i++)
+                                <li class="pt-2">
+                                    <a class="flex items-start" href="">
+                                        <div class="mr-3 shrink-0"><img class="object-cover h-24 w-full "
+                                                src="https://images.unsplash.com/photo-1679674704818-f3a500c1305b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+                                                alt=""></div>
+
+                                        <div class="flex flex-col space-y-4 truncate">
+                                            <div class="mr-3 ">
+                                                <span class="block text-sm text-gray-900">2023-03-25</span>
+                                            </div>
+                                            <div class="mr-3 "><span class="text-sm ">Technical writer, web
+                                                    developer, and
+                                                    customer success specialist.</span></div>
+                                            <div
+                                                class="mr-3 inline-flex items-center justify-center  text-sm font-light text-center text-black hover:underline hover:underline-offset-2 hover:text-[#F69679]">
+                                                Read More
+                                                <svg class="w-3 h-3 ml-2 " fill="currentColor" viewBox="0 0 20 20"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd"
+                                                        d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                                                        clip-rule="evenodd"></path>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                            @endfor
+                        </ul>
+                    </div>
+                </div>
+            </aside>
         </div>
 
-        <div class="rounded shadow-lg">
-            <img class="w-full aspect-auto" src="https://source.unsplash.com/random/2" alt="">
-            <div class="flex flex-row p-2 gap-4 items-center">
-                <div class="">
-                    <img class="relative z-auto top-0 h-8 w-8 rounded-full ring-2 ring-white object-cover"
-                        src="https://images.unsplash.com/photo-1555952517-2e8e729e0b44?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTV8fHBlcnNvbnxlbnwwfDF8MHx8&auto=format&fit=crop&w=500&q=60"
-                        alt="">
-                </div>
-                <div class="inset-x-0 bottom-0 text-left text-sm font-bold hover:underline cursor-pointer ">
-                    <a href="" class="href">ItsMeCJ</a>
-                </div>
-
-                <div class="">
-                    <ul class="flex justify-left mb-0 items-center">
-                        <li>
-                            @for ($j = 0; $j < 5; $j++)
-                                <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star"
-                                    class="w-4 text-yellow-300" role="img" xmlns="http://www.w3.org/2000/svg"
-                                    viewBox="0 0 576 512">
-                                    <path fill="currentColor"
-                                        d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z">
-                                    </path>
-                                </svg>
-                        </li>
-                        @endfor
-                        <span>(23)</span>
-                    </ul>
-                </div>
-            </div>
-            <p class="p-4 text-black text-base">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, Nonea! Maiores et
-                perferendis eaque, exercitationem praesentium nihil.
-            </p>
-        </div>
-        <div class="rounded shadow-lg">
-            <img class="w-full aspect-auto" src="https://source.unsplash.com/random/3" alt="">
-            <div class="flex flex-row p-2 gap-4 items-center">
-                <div class="">
-                    <img class="relative z-auto top-0 h-8 w-8 rounded-full ring-2 ring-white object-cover"
-                        src="https://images.unsplash.com/photo-1555952517-2e8e729e0b44?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTV8fHBlcnNvbnxlbnwwfDF8MHx8&auto=format&fit=crop&w=500&q=60"
-                        alt="">
-                </div>
-                <div class="inset-x-0 bottom-0 text-left text-sm font-bold hover:underline cursor-pointer ">
-                    <a href="" class="href">ItsMeCJ</a>
-                </div>
-
-                <div class="">
-                    <ul class="flex justify-left mb-0 items-center">
-                        <li>
-                            @for ($j = 0; $j < 5; $j++)
-                                <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star"
-                                    class="w-4 text-yellow-300" role="img" xmlns="http://www.w3.org/2000/svg"
-                                    viewBox="0 0 576 512">
-                                    <path fill="currentColor"
-                                        d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z">
-                                    </path>
-                                </svg>
-                        </li>
-                        @endfor
-                        <span>(23)</span>
-                    </ul>
-                </div>
-            </div>
-            <p class="p-4 text-black text-base">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, Nonea! Maiores et
-                perferendis eaque, exercitationem praesentium nihil.
-            </p>
-        </div>
-        <div class="rounded shadow-lg">
-            <img class="w-full aspect-auto" src="https://source.unsplash.com/random/4" alt="">
-            <div class="flex flex-row p-2 gap-4 items-center">
-                <div class="">
-                    <img class="relative z-auto top-0 h-8 w-8 rounded-full ring-2 ring-white object-cover"
-                        src="https://images.unsplash.com/photo-1555952517-2e8e729e0b44?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTV8fHBlcnNvbnxlbnwwfDF8MHx8&auto=format&fit=crop&w=500&q=60"
-                        alt="">
-                </div>
-                <div class="inset-x-0 bottom-0 text-left text-sm font-bold hover:underline cursor-pointer ">
-                    <a href="" class="href">ItsMeCJ</a>
-                </div>
-
-                <div class="">
-                    <ul class="flex justify-left mb-0 items-center">
-                        <li>
-                            @for ($j = 0; $j < 5; $j++)
-                                <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star"
-                                    class="w-4 text-yellow-300" role="img" xmlns="http://www.w3.org/2000/svg"
-                                    viewBox="0 0 576 512">
-                                    <path fill="currentColor"
-                                        d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z">
-                                    </path>
-                                </svg>
-                        </li>
-                        @endfor
-                        <span>(23)</span>
-                    </ul>
-                </div>
-            </div>
-            <p class="p-4 text-black text-base">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, Nonea! Maiores et
-                perferendis eaque, exercitationem praesentium nihil.
-            </p>
-        </div>
-        <div class="rounded shadow-lg">
-            <img class="w-full aspect-auto" src="https://source.unsplash.com/random/5" alt="">
-            <div class="flex flex-row p-2 gap-4 items-center">
-                <div class="">
-                    <img class="relative z-auto top-0 h-8 w-8 rounded-full ring-2 ring-white object-cover"
-                        src="https://images.unsplash.com/photo-1555952517-2e8e729e0b44?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTV8fHBlcnNvbnxlbnwwfDF8MHx8&auto=format&fit=crop&w=500&q=60"
-                        alt="">
-                </div>
-                <div class="inset-x-0 bottom-0 text-left text-sm font-bold hover:underline cursor-pointer ">
-                    <a href="" class="href">ItsMeCJ</a>
-                </div>
-
-                <div class="">
-                    <ul class="flex justify-left mb-0 items-center">
-                        <li>
-                            @for ($j = 0; $j < 5; $j++)
-                                <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star"
-                                    class="w-4 text-yellow-300" role="img" xmlns="http://www.w3.org/2000/svg"
-                                    viewBox="0 0 576 512">
-                                    <path fill="currentColor"
-                                        d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z">
-                                    </path>
-                                </svg>
-                        </li>
-                        @endfor
-                        <span>(23)</span>
-                    </ul>
-                </div>
-            </div>
-            <p class="p-4 text-black text-base">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, Nonea! Maiores et
-                perferendis eaque, exercitationem praesentium nihil.
-            </p>
-        </div>
-        <div class="rounded shadow-lg">
-            <img class="w-full aspect-auto" src="https://source.unsplash.com/random/5" alt="">
-            <div class="flex flex-row p-2 gap-4 items-center">
-                <div class="">
-                    <img class="relative z-auto top-0 h-8 w-8 rounded-full ring-2 ring-white object-cover"
-                        src="https://images.unsplash.com/photo-1555952517-2e8e729e0b44?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTV8fHBlcnNvbnxlbnwwfDF8MHx8&auto=format&fit=crop&w=500&q=60"
-                        alt="">
-                </div>
-                <div class="inset-x-0 bottom-0 text-left text-sm font-bold hover:underline cursor-pointer ">
-                    <a href="" class="href">ItsMeCJ</a>
-                </div>
-
-                <div class="">
-                    <ul class="flex justify-left mb-0 items-center">
-                        <li>
-                            @for ($j = 0; $j < 5; $j++)
-                                <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star"
-                                    class="w-4 text-yellow-300" role="img" xmlns="http://www.w3.org/2000/svg"
-                                    viewBox="0 0 576 512">
-                                    <path fill="currentColor"
-                                        d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z">
-                                    </path>
-                                </svg>
-                        </li>
-                        @endfor
-                        <span>(23)</span>
-                    </ul>
-                </div>
-            </div>
-            <p class="p-4 text-black text-base">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, Nonea! Maiores et
-                perferendis eaque, exercitationem praesentium nihil.
-            </p>
-        </div>
-        <div class="rounded shadow-lg">
-            <img class="w-full aspect-auto" src="https://source.unsplash.com/random/7" alt="">
-            <div class="flex flex-row p-2 gap-4 items-center">
-                <div class="">
-                    <img class="relative z-auto top-0 h-8 w-8 rounded-full ring-2 ring-white object-cover"
-                        src="https://images.unsplash.com/photo-1555952517-2e8e729e0b44?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTV8fHBlcnNvbnxlbnwwfDF8MHx8&auto=format&fit=crop&w=500&q=60"
-                        alt="">
-                </div>
-                <div class="inset-x-0 bottom-0 text-left text-sm font-bold hover:underline cursor-pointer ">
-                    <a href="" class="href">ItsMeCJ</a>
-                </div>
-
-                <div class="">
-                    <ul class="flex justify-left mb-0 items-center">
-                        <li>
-                            @for ($j = 0; $j < 5; $j++)
-                                <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star"
-                                    class="w-4 text-yellow-300" role="img" xmlns="http://www.w3.org/2000/svg"
-                                    viewBox="0 0 576 512">
-                                    <path fill="currentColor"
-                                        d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z">
-                                    </path>
-                                </svg>
-                        </li>
-                        @endfor
-                        <span>(23)</span>
-                    </ul>
-                </div>
-            </div>
-            <p class="p-4 text-black text-base">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, Nonea! Maiores et
-                perferendis eaque, exercitationem praesentium nihil.
-            </p>
-        </div>
-        <div class="rounded shadow-lg">
-            <img class="w-full aspect-auto" src="https://source.unsplash.com/random/8" alt="">
-            <div class="flex flex-row p-2 gap-4 items-center">
-                <div class="">
-                    <img class="relative z-auto top-0 h-8 w-8 rounded-full ring-2 ring-white object-cover"
-                        src="https://images.unsplash.com/photo-1555952517-2e8e729e0b44?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTV8fHBlcnNvbnxlbnwwfDF8MHx8&auto=format&fit=crop&w=500&q=60"
-                        alt="">
-                </div>
-                <div class="inset-x-0 bottom-0 text-left text-sm font-bold hover:underline cursor-pointer ">
-                    <a href="" class="href">ItsMeCJ</a>
-                </div>
-
-                <div class="">
-                    <ul class="flex justify-left mb-0 items-center">
-                        <li>
-                            @for ($j = 0; $j < 5; $j++)
-                                <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star"
-                                    class="w-4 text-yellow-300" role="img" xmlns="http://www.w3.org/2000/svg"
-                                    viewBox="0 0 576 512">
-                                    <path fill="currentColor"
-                                        d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z">
-                                    </path>
-                                </svg>
-                        </li>
-                        @endfor
-                        <span>(23)</span>
-                    </ul>
-                </div>
-            </div>
-            <p class="p-4 text-black text-base">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, Nonea! Maiores et
-                perferendis eaque, exercitationem praesentium nihil.
-            </p>
-        </div>
     </div>
-
-
-
 </x-guest-layout>

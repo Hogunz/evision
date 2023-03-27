@@ -165,7 +165,7 @@
                 @for ($i = 0; $i < 10; $i++)
                     <div class="relative ">
 
-                        <a href="/itsMeCJ/I-will-create" class="">
+                        <a href="/categories" class="">
                             <img class="mb-4 rounded-lg aspect-square object-cover"
                                 src="https://source.unsplash.com/random/3">
                             <div
@@ -178,7 +178,7 @@
                 @endfor
             </div>
             <div class="container mx-auto flex justify-center p-8">
-                <a href="/featured"
+                <a href="/categories"
                     class="border rounded   hover:bg
     -[#F69679]/75 p-2  text-base text-center text-[#F69679]/75  hover:text-white hover:bg-[#F69679] transition duration-300 hover:ease-in-out   cursor-pointer">
                     Show More

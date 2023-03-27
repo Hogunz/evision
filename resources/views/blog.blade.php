@@ -1,76 +1,210 @@
 <x-guest-layout>
-    <x-category></x-category>
-    <section class="container mx-auto p-8" x-data="visibility" x-ref="element" @scroll.window="checkVisibility()"
-        x-init="$nextTick(() => isTextVisible = true)">
-        <div class="columns-2 md:columns-3 lg:columns-4" x-show="isTextVisible"
-            x-transition:enter="transition ease-out duration-700 delay-500" x-transition:enter-start="opacity-0 scale-90"
-            x-transition:enter-end="opacity-100 scale-100" x-transition:leave="transition ease-in duration-300"
-            x-transition:leave-start="opacity-100 scale-100" x-transition:leave-end="opacity-0 scale-90">
 
+    <div class="flex justify-between container mx-auto">
+        <!-- 1 -->
+        <div>
+            <aside class="hidden lg:block lg:w-80">
+                <div class="sticky top-36">
+                    <h3 class="sr-only">Sidebar</h3>
 
-            @for ($i = 0; $i < 12; $i++)
-                <a href="/blog/index" class="href">
-                    <div class="relative group transition-transform  ">
-                        <div
-                            class="absolute inset-0 rounded-3xl  bg-gradient-to-b  to-black group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70 cursor-pointer">
-                            <p
-                                class="p-6 text-xs font-medium leading-3 text-white absolute top-0 right-0  opacity-0 transition-opacity group-hover:opacity-100">
-                                <script>
-                                    document.write(new Date().getFullYear());
-                                </script>
-                            </p>
-                        </div>
-                        <div
-                            class=" absolute bottom-0 left-0 p-8 text-white flex flex-col  translate-y-6    px-9 text-center transition-all duration-500 group-hover:translate-y-0">
-                            <div class="relative text-left">
-                                <h1
-                                    class=" text-xl font-semibold 5 text-white mb-3 duration-300 opacity-0 transition-opacity group-hover:opacity-100 ">
-                                    Title post</h1>
-                                <p
-                                    class=" text-base leading-4 text-white mt-2 duration-300 opacity-0 transition-opacity group-hover:opacity-100">
-                                    Author</p>
-                                <a href=""
-                                    class="focus:outline-none focus:underline flex items-center mt-4 cursor-pointer text-white hover:text-gray-200 hover:underline duration-300 opacity-0 transition-opacity group-hover:opacity-100">
-                                    <p class="pr-2 text-sm font-medium leading-none">Read More</p>
-                                    <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/blog-I-svg1.svg"
-                                        alt="arrow">
-                                </a>
-                            </div>
-                        </div>
-                        <a href="" class="">
-                            <img class="mb-4 rounded-lg    "
-                                src="https://images.pexels.com/photos/5690183/pexels-photo-5690183.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1600">
-                        </a>
+                    <div
+                        class="p-6 pb-4 mt-6 mb-6 font-medium text-gray-500 bg-white border border-gray-200 rounded-lg  ">
+                        <h4 class="mb-4 font-bold text-gray-900 uppercase ">Become an Author</h4>
+                        <ul class="space-y-4 text-gray-500">
+                            <li><a class="flex items-start" href="">
+                                    <div class="mr-3"><span class="text-sm"> Would you like to make a contribution to
+                                            this blog by writing guest posts?<br>To proceed, please get in touch with us
+                                            and provide a resume of your previous writing articles.</span></div>
+                                </a></li>
+                            <a class="text-white block text-center bg-[#6DCFF6] hover:bg-[#6DCFF6]/75 focus:ring-4 focus:ring-[#6DCFF6]/50 font-medium rounded-lg text-sm px-5 py-2.5 focus:outline-none w-full"
+                                href="">Click Here</a>
+                        </ul>
+
                     </div>
-                </a>
-            @endfor
 
+                </div>
+            </aside>
         </div>
-    </section>
+        <!-- 2 -->
+        <div>
+            <div class="container max-w-max mx-auto p-8">
+                <section class="bg-white p-4 mb-4">
+                    <div class="grid max-w-screen-xl mx-auto lg:gap-8 xl:gap-2 lg:grid-cols-12">
+                        <div class="mr-auto place-self-center lg:col-span-7 ">
+                            <p class="text-base">March 24, 2023</p>
+                            <h1
+                                class="max-w-2xl mb-4 text-lg font-extrabold tracking-tight leading-none md:text-xl xl:text-2xl ">
+                                Sharing our passion for learning and discovery through our blog.</h1>
+                            <p class="text-sm underline mb-4 text-black ">Christopher James Dela
+                                Cruz</p>
+                            <p
+                                class="max-w-2xl mb-6 font-base text-gray-500 lg:mb-8 md:text-sm lg:text-base text-justify">
+                                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+                                unknown
+                                printer took a galley of type and scrambled it to make a type specimen book.</p>
+                            <a href="/blog/index"
+                                class="inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center text-white rounded-lg bg-[#6DCFF6] hover:bg-[#6DCFF6]/75 focus:ring-4 focus:ring-[#6DCFF6] ">
+                                Read More
+                                <svg class="w-5 h-5 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd"
+                                        d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                                        clip-rule="evenodd"></path>
+                                </svg>
+                            </a>
+                        </div>
 
+                        <div class="hidden lg:mt-0 lg:col-span-5 lg:flex overflow-hidden ">
+                            <img class="transition duration-300 ease-in-out hover:scale-110 hover:rotate-3"
+                                src="https://images.unsplash.com/photo-1679609979971-c64d9342ce0d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+                                alt="">
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <main class=" pb-8 bg-white lg:pb-16 mx-auto ">
+                <div class="flex justify-between px-4 mx-auto max-w-8xl">
+                    <div class="w-full container mx-auto">
+                        <article class="">
+                            <div class="container max-w-7xl mx-auto p-8">
+                                <section class=" ">
+                                    <div class="grid lg:grid-cols-2  mx-auto lg:max-w-7xl h-screen">
+                                        <div class="flex items-center overflow-hidden cursor-pointer ">
+                                            <img class="w-full md:h-full object-cover transition duration-300 ease-in-out hover:scale-110 hover:rotate-3 "
+                                                src="https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1469&amp;q=80"
+                                                alt="">
+                                        </div>
+                                        <div class="p-4 md:p-8 flex items-center">
+                                            <div>
+                                                <div
+                                                    class="transition duration-300 ease-in-out hover:scale-110 hover:font-extrabold hover:text-[#F69679] ">
+                                                    <p class="text-sm text-black">March 24, 2023</p>
+                                                    <h1
+                                                        class="font-bold text-base md:text-base lg:text-md xl:text-lg text-justify ">
+                                                        Sharing our
+                                                        passion for learning and discovery through our blog.</h1>
+                                                    <p class="text-sm underline mb-4 text-black ">Christopher James Dela
+                                                        Cruz</p>
+                                                    <h2 class="text-xs md:text-sm text-justify">Lorem ipsum
+                                                        dolor sit
+                                                        amet consectetur
+                                                        adipisicing
+                                                        elit.
+                                                        Facilis dolore adipisci placeat.</h2>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="p-4 md:p-8 flex items-center">
+                                            <div>
+                                                <div
+                                                    class="transition duration-300 ease-in-out hover:scale-110 hover:font-extrabold hover:text-[#F69679] ">
+                                                    <p class="text-sm text-black">March 24, 2023</p>
+                                                    <h1
+                                                        class="font-bold text-base md:text-base lg:text-md xl:text-lg text-justify ">
+                                                        Sharing our
+                                                        passion for learning and discovery through our blog.</h1>
+                                                    <p class="text-sm underline mb-4 text-black ">Christopher James Dela
+                                                        Cruz</p>
+                                                    <h2 class="text-xs md:text-sm text-justify">Lorem ipsum
+                                                        dolor sit
+                                                        amet consectetur
+                                                        adipisicing
+                                                        elit.
+                                                        Facilis dolore adipisci placeat.</h2>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="flex items-center overflow-hidden cursor-pointer ">
+                                            <img class="w-full md:h-full object-cover  transition duration-300 ease-in-out hover:scale-110 hover:rotate-3 "
+                                                src="https://images.unsplash.com/photo-1510924199351-4e9d94df18a6?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1474&amp;q=80"
+                                                alt="">
+                                        </div>
 
-    <section>
+                                        <div class="flex items-center overflow-hidden cursor-pointer ">
+                                            <img class="w-full md:h-full object-cover transition duration-300 ease-in-out hover:scale-110 hover:rotate-3 "
+                                                src="https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1469&amp;q=80"
+                                                alt="">
+                                        </div>
+                                        <div class="p-4 md:p-8 flex items-center">
+                                            <div>
+                                                <div
+                                                    class="transition duration-300 ease-in-out hover:scale-110 hover:font-extrabold hover:text-[#F69679] ">
+                                                    <p class="text-sm text-black">March 24, 2023</p>
+                                                    <h1
+                                                        class="font-bold text-base md:text-base lg:text-md xl:text-lg text-justify ">
+                                                        Sharing our
+                                                        passion for learning and discovery through our blog.</h1>
+                                                    <p class="text-sm underline mb-4 text-black ">Christopher James Dela
+                                                        Cruz</p>
+                                                    <h2 class="text-xs md:text-sm text-justify">Lorem ipsum
+                                                        dolor sit
+                                                        amet consectetur
+                                                        adipisicing
+                                                        elit.
+                                                        Facilis dolore adipisci placeat.</h2>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                        </article>
+                    </div>
+                </div>
+            </main>
+        </div>
+        <!-- 3 -->
+        <div class="sticky top-0">
+            <aside class="hidden lg:block lg:w-80" aria-labelledby="sidebar-label">
+                <div class=" ">
+                    <h3 id="sidebar-label" class="sr-only">Sidebar</h3>
+                    <div
+                        class="p-6 pb-4 mt-6 mb-6 font-medium text-gray-500 bg-white border border-gray-200 rounded-lg  ">
+                        <h4 class="mb-4 font-bold text-gray-900 uppercase">Recommended topics</h4>
 
-    </section>
+                        <div class="flex flex-wrap">
+                            @for ($i = 0; $i < 5; $i++)
+                                <a class="bg-[#6DCFF6] hover:bg-[#6DCFF6]/75 text-white text-sm font-medium mr-2 px-2.5 py-0.5 rounded mb-2"
+                                    href="">Caterer</a>
+                            @endfor
+                        </div>
+
+                    </div>
+                    <div
+                        class="p-6 pb-4 mt-6 mb-6 font-medium text-gray-500 bg-white border border-gray-200 rounded-lg   ">
+                        <ul class="space-y-4 divide-y text-gray-500">
+                            @for ($i = 0; $i < 6; $i++)
+                                <li class="pt-2">
+                                    <a class="flex items-start" href="">
+                                        <div class="mr-3 shrink-0"><img class="object-cover h-24 w-full "
+                                                src="https://images.unsplash.com/photo-1679674704818-f3a500c1305b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+                                                alt=""></div>
+
+                                        <div class="flex flex-col space-y-4 truncate">
+                                            <div class="mr-3 ">
+                                                <span class="block text-sm text-gray-900">2023-03-25</span>
+                                            </div>
+                                            <div class="mr-3 "><span class="text-sm ">Technical writer, web
+                                                    developer, and
+                                                    customer success specialist.</span></div>
+                                            <div
+                                                class="mr-3 inline-flex items-center justify-center  text-sm font-light text-center text-black hover:underline hover:underline-offset-2 hover:text-[#F69679]">
+                                                Read More
+                                                <svg class="w-3 h-3 ml-2 " fill="currentColor" viewBox="0 0 20 20"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd"
+                                                        d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                                                        clip-rule="evenodd"></path>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                            @endfor
+                        </ul>
+                    </div>
+                </div>
+            </aside>
+        </div>
+
+    </div>
 </x-guest-layout>
-
-<script>
-    document.addEventListener('alpine:init', () => {
-        Alpine.data('visibility', (visible = false) => ({
-            isTextVisible: visible,
-            checkVisibility() {
-                if (this.isTextVisible) return
-                const element = this.$refs.element
-                const rect = element.getBoundingClientRect();
-                const windowHeight = window.innerHeight || document.documentElement.clientHeight;
-                const windowWidth = window.innerWidth || document.documentElement.clientWidth;
-                const visible =
-                    rect.top <= windowHeight &&
-                    rect.top + rect.height >= 0 &&
-                    rect.left <= windowWidth &&
-                    rect.left + rect.width >= 0;
-                this.isTextVisible = visible;
-            }
-        }))
-    })
-</script>

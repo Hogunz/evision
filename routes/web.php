@@ -15,6 +15,8 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('welcome');
+
+    //FEATURES
 });
 Route::get('/categories', function () {
     return view('categories');
@@ -22,12 +24,15 @@ Route::get('/categories', function () {
 Route::get('/featured', function () {
     return view('featured');
 });
-
-Route::get('/supplier-registration', function () {
-    return view('supplier-registration');
-});
 Route::get('/blog', function () {
     return view('blog');
+});
+Route::get('/modal', function () {
+    return view('layouts/login-modal');
+});
+//supplier
+Route::get('/supplier-registration', function () {
+    return view('supplier-registration');
 });
 Route::get('/itsMeCJ/I-will-create', function () {
     return view('supplier/services-profile');
@@ -35,12 +40,15 @@ Route::get('/itsMeCJ/I-will-create', function () {
 Route::get('/itsMeCJ', function () {
     return view('supplier/supplier-profile');
 });
+//blog
 Route::get('/blog/index', function () {
     return view('blog/index');
 });
 Route::get('/blog/index/portfolio', function () {
     return view('blog/portfolio');
 });
+
+
 Route::get('/user/index', function () {
     return view('user/index');
 });
