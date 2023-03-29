@@ -3,11 +3,12 @@
         <div class="  ">
             <div class="container mx-auto p-8" style="">
                 <div class="bg-cover bg-center  h-auto text-white py-24 px-10 object-fill rounded-t-lg"
-                    style="background-image: url(https://plus.unsplash.com/premium_photo-1661311839935-ade135b5aa84?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80">
+                    style="background-image: url(https://plus.unsplash.com/premium_photo-1664438942214-fee803f245b5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80">
                     <div class="md:w-1/2">
-                        <p class="font-bold text-sm uppercase">w</p>
-                        <p class="text-3xl font-bold">w</p>
-                        <p class="text-2xl mb-10 leading-none">w</p>
+
+                        <p class="text-3xl font-bold">Discover a World of Fun and Excitement
+                            Our Featured Events Have Something for Everyone!</p>
+
 
                     </div>
                 </div> <!-- container -->

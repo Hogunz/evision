@@ -1,5 +1,4 @@
 <x-guest-layout>
-
     <section class="">
         <div class="relative overflow-hidden bg-cover bg-no-repeat bg-center">
             <div class="bg-gradient-to-b from-[#6DCFF6]/75 to-transparent" style="height: 100vh; width: 100vw; ">
@@ -17,13 +16,10 @@
                             </h2>
                             <h4 class=" font-semibold text-xl mb-6">Help people. Earn Money.</h4>
                             <a class="inline-block px-7 py-3 mb-1 font-bold bg-[#82CA9C] hover:bg-[#82CA9C]/75 text-white text-sm leading-snug  rounded  hover:bg-opacity-75 focus:outline-none  focus:ring-0 transition duration-150 ease-in-out"
-                                href=" " role="button" data-mdb-ripple="true"
+                                href="/become-a-supplier " role="button" data-mdb-ripple="true"
                                 data-mdb-ripple-color="light">Become a Supplier</a>
                         </div>
                         <div class="flex w-full h-full items-left justify-left gap-8">
-
-
-
                         </div>
                     </div>
 

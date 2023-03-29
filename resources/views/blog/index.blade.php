@@ -31,14 +31,15 @@
                 <div class="max-w-screen-xl px-4 py-8 mx-auto">
                     <div class="mr-auto place-self-center lg:col-span-7">
 
-                        <div class="text-justify">
+                        <div class="text-justify ">
                             <h1
-                                class="max-w-2xl mb-4 text-lg font-extrabold tracking-tight leading-none md:text-xl xl:text-2xl ">
+                                class="max-w-2xl mb-4  font-extrabold tracking-tight leading-none text-lg md:text-xl xl:text-4xl ">
                                 Sharing our passion for learning and discovery through our blog.</h1>
                             <p class="text-xs p-2">By:<span class="underline text-black">Christopher James Dela
                                     Cruz</span> March
                                 24, 2023</p>
-                            <div class="grid grid-cols-2 gap-4">
+                            <div
+                                class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-1 xl:grid-cols-2  gap-4">
                                 <div class="">
                                     <p class="max-w-2xl mb-6 font-base text-gray-500 lg:mb-8 md:text-sm lg:text-base">
                                         Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,

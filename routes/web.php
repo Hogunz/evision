@@ -16,7 +16,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 
-    //FEATURES
+    //OVERALL
 });
 Route::get('/categories', function () {
     return view('categories');
@@ -29,6 +29,9 @@ Route::get('/blog', function () {
 });
 Route::get('/modal', function () {
     return view('layouts/login-modal');
+});
+Route::get('/become-a-supplier', function () {
+    return view('become-a-supplier');
 });
 //supplier
 Route::get('/supplier-registration', function () {

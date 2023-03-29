@@ -5,12 +5,12 @@
 
             </div>
 
-            <div class="absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-fixed container mx-auto"
+            <div class="absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-fixed container mx-autor"
                 x-data="visibility" x-ref="element" @scroll.window="checkVisibility()" x-init="$nextTick(() => isTextVisible = true)">
                 <div class="flex flex-col sm:flex-row justify-between h-full items-center cursor-default sm:mx-48 gap-6">
                     <div class="">
                         <!--Carousel-->
-                        <div class="text-center md:flex md:items-center md:text-left" x-show="isTextVisible"
+                        <div class="hidden text-center md:flex md:items-center md:text-left" x-show="isTextVisible"
                             x-transition:enter="transition ease-out duration-700 delay-500"
                             x-transition:enter-start="opacity-0 scale-90" x-transition:enter-end="opacity-100 scale-100"
                             x-transition:leave="transition ease-in duration-300"
@@ -44,7 +44,7 @@
                         </div>
                         <!--Carousel-->
                     </div>
-                    <div class="relative shrink-0 text-5xl  text-center text-white" x-show="isTextVisible"
+                    <div class="relative shrink-0 text-5xl text-center text-white" x-show="isTextVisible"
                         x-transition:enter="transition ease-out duration-700 delay-500"
                         x-transition:enter-start="opacity-0 scale-90" x-transition:enter-end="opacity-100 scale-100"
                         x-transition:leave="transition ease-in duration-300"
@@ -103,7 +103,7 @@
                     </div>
                     <div class="relative z-0">
                         <button
-                            class="border-transparent rounded-lg shadow-2xl text-white p-4 px-24 bg-[#82CA9C]/75 hover:bg-[#82CA9C]/50  ">
+                            class="rounded-lg drop-shadow-2xl text-white p-4 px-24 bg-[#82CA9C]/75  hover:bg-[#82CA9C] active:bg-[#82CA9C]/75 focus:outline-none focus:ring focus:ring-[#82CA9C]">
                             Search
                         </button>
                     </div>
