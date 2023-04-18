@@ -119,7 +119,8 @@
             <div class=" ">
                 <div class="columns-3  md:columns-4 lg:columns-5 container mx-auto max-w-7xl pt-8 mb-4">
                     @for ($i = 0; $i < 5; $i++)
-                        <div class="relative group transition-transform  ">
+                        <div class="relative group transition-transform" data-aos="flip-left"
+                            data-aos-easing="ease-out-cubic" data-aos-duration="2000">
                             <div
                                 class="absolute inset-0 rounded-3xl  bg-gradient-to-b  to-black group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70">
                             </div>
@@ -163,7 +164,8 @@
         <div class=" ">
             <div class="columns-3  md:columns-4 lg:columns-5 container mx-auto max-w-7xl pt-8 mb-4">
                 @for ($i = 0; $i < 10; $i++)
-                    <div class="relative ">
+                    <div class="relative " data-aos="flip-left" data-aos-easing="ease-out-cubic"
+                        data-aos-duration="2000">
 
                         <a href="/categories" class="">
                             <img class="mb-4 rounded-lg aspect-square object-cover"
@@ -189,13 +191,8 @@
 
     <section class="p-8 ">
         <div class="grid lg:grid-cols-2 gap-2 mx-auto lg:max-w-7xl h-screen">
-            <div x-data="visibility" class="p-4 md:p-8 bg-[#6DCFF6]/25 flex items-center" x-ref="element"
-                @scroll.window="checkVisibility()">
-                <div x-show="isTextVisible" class=""
-                    x-transition:enter="transition ease-out delay-300 duration-300"
-                    x-transition:enter-start="opacity-0 scale-90" x-transition:enter-end="opacity-100 scale-100"
-                    x-transition:leave="transition ease-in duration-300"
-                    x-transition:leave-start="opacity-100 scale-100" x-transition:leave-end="opacity-0 scale-90">
+            <div class="p-4 md:p-8 bg-[#6DCFF6]/25 flex items-center" data-aos="fade-right" data-aos-duration="2000">
+                <div>
                     <div class="transition duration-500 ease-in-out hover:scale-110 hover:font-extrabold ">
                         <h1 class="font-bold text-2xl md:text-3xl text-left ">Unique</h1>
                         <h2 class="text-left text-base md:text-lg">Lorem ipsum dolor sit amet consectetur
@@ -219,14 +216,9 @@
                     alt="">
             </div>
 
-            <div class="p-4 md:p-8 bg-[#F69679]/25 flex items-center" x-data="visibility" x-ref="element"
-                @scroll.window="checkVisibility()">
+            <div class="p-4 md:p-8 bg-[#F69679]/25 flex items-center" data-aos="fade-left" data-aos-duration="2000">
 
-                <div x-show="isTextVisible" class=""
-                    x-transition:enter="transition delay-300 ease-out duration-300 "
-                    x-transition:enter-start="opacity-0 scale-90" x-transition:enter-end="opacity-100 scale-100"
-                    x-transition:leave="transition ease-in duration-300"
-                    x-transition:leave-start="opacity-100 scale-100" x-transition:leave-end="opacity-0 scale-90">
+                <div>
                     <div class="transition duration-500 ease-in-out hover:scale-110 hover:font-extrabold ">
                         <h1 class="font-bold text-2xl md:text-3xl text-left">All in One</h1>
                         <h2 class="text-left text-base md:text-lg">Lorem ipsum dolor sit amet consectetur
@@ -238,14 +230,9 @@
 
             </div>
 
-            <div class="p-4 md:p-8 bg-[#6DCFF6]/25 flex items-center" x-data="visibility" x-ref="element"
-                @scroll.window="checkVisibility()">
+            <div class="p-4 md:p-8 bg-[#6DCFF6]/25 flex items-center" data-aos="fade-right" data-aos-duration="2000">
 
-                <div x-show="isTextVisible" class=""
-                    x-transition:enter="transition delay-300 ease-out duration-300"
-                    x-transition:enter-start="opacity-0 scale-90" x-transition:enter-end="opacity-100 scale-100"
-                    x-transition:leave="transition ease-in duration-300"
-                    x-transition:leave-start="opacity-100 scale-100" x-transition:leave-end="opacity-0 scale-90">
+                <div>
                     <div class="transition duration-500 ease-in-out hover:scale-110 hover:font-extrabold ">
                         <h1 class="font-bold text-3xl md:text-4xl text-left">Reliable</h1>
                         <h2 class="text-left text-base md:text-lg">Lorem ipsum dolor sit amet consectetur
@@ -325,10 +312,7 @@
                 </div>
             </div>
         </div>
-
-
     </section>
-
 
 
 </x-guest-layout>

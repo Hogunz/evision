@@ -15,8 +15,6 @@
                 </div> <!-- container -->
                 <br>
             </div>
-
-
         </div>
 
 
@@ -115,9 +113,6 @@
                     </div>
                     <hr class="w-full lg:mt-10 md:mt-12 md:mb-8 my-8">
                     <div>
-
-
-
 
 
 
@@ -326,8 +321,8 @@
     </section>
     <section>
 
-        <!-- component -->
-        <!-- This is an example component -->
+        <!-- CALENDAR -->
+
         <div>
 
 

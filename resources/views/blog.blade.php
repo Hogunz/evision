@@ -39,9 +39,9 @@
                                 Cruz</p>
                             <p
                                 class="max-w-2xl mb-6 font-base text-gray-500 lg:mb-8 md:text-sm lg:text-base text-justify">
-                                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an
-                                unknown
-                                printer took a galley of type and scrambled it to make a type specimen book.</p>
+                                Our blog is a platform where we share our passion for learning and discovery. Through
+                                our blog, we aim to inspire and engage our readers with a variety of topics and
+                                perspectives, ranging from science and technology to art and culture.</p>
                             <a href="/blog/index"
                                 class="inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center text-white rounded-lg bg-[#6DCFF6] hover:bg-[#6DCFF6]/75 focus:ring-4 focus:ring-[#6DCFF6] ">
                                 Read More
@@ -81,16 +81,16 @@
                                                     <p class="text-sm text-black">March 24, 2023</p>
                                                     <h1
                                                         class="font-bold text-base md:text-base lg:text-md xl:text-lg text-justify ">
-                                                        Sharing our
-                                                        passion for learning and discovery through our blog.</h1>
+                                                        Catering Services: Providing Delicious Food for Memorable Events
+                                                    </h1>
                                                     <p class="text-sm underline mb-4 text-black ">Christopher James Dela
                                                         Cruz</p>
-                                                    <h2 class="text-xs md:text-sm text-justify">Lorem ipsum
-                                                        dolor sit
-                                                        amet consectetur
-                                                        adipisicing
-                                                        elit.
-                                                        Facilis dolore adipisci placeat.</h2>
+                                                    <h2 class="text-xs md:text-sm text-justify">Experienced caterers
+                                                        work closely with their clients to create customized menus that
+                                                        reflect the theme and style of the event. They also provide
+                                                        full-service options, including setup, service, and cleanup, so
+                                                        that hosts can relax and enjoy their event with their guests.
+                                                    </h2>
                                                 </div>
                                             </div>
                                         </div>
@@ -172,7 +172,7 @@
                     <div
                         class="p-6 pb-4 mt-6 mb-6 font-medium text-gray-500 bg-white border border-gray-200 rounded-lg   ">
                         <ul class="space-y-4 divide-y text-gray-500">
-                            @for ($i = 0; $i < 6; $i++)
+                            {{-- @for ($i = 0; $i < 6; $i++)
                                 <li class="pt-2">
                                     <a class="flex items-start" href="">
                                         <div class="mr-3 shrink-0"><img class="object-cover h-24 w-full "
@@ -199,7 +199,144 @@
                                         </div>
                                     </a>
                                 </li>
-                            @endfor
+                            @endfor --}}
+
+                            <li class="pt-2">
+                                <a class="flex items-start" href="">
+                                    <div class="mr-3 shrink-0"><img class="object-cover h-24 w-full "
+                                            src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1469&q=80"
+                                            alt=""></div>
+
+                                    <div class="flex flex-col space-y-4 truncate">
+                                        <div class="mr-3 ">
+                                            <span class="block text-sm text-gray-900">2023-03-25</span>
+                                        </div>
+                                        <div class="mr-3 "><span class="text-sm ">Technical writer, web
+                                                developer, and
+                                                customer success specialist.</span></div>
+                                        <div
+                                            class="mr-3 inline-flex items-center justify-center  text-sm font-light text-center text-black hover:underline hover:underline-offset-2 hover:text-[#F69679]">
+                                            Read More
+                                            <svg class="w-3 h-3 ml-2 " fill="currentColor" viewBox="0 0 20 20"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd"
+                                                    d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                                                    clip-rule="evenodd"></path>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li class="pt-2">
+                                <a class="flex items-start" href="">
+                                    <div class="mr-3 shrink-0"><img class="object-cover h-24 w-full "
+                                            src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+                                            alt=""></div>
+
+                                    <div class="flex flex-col space-y-4 truncate">
+                                        <div class="mr-3 ">
+                                            <span class="block text-sm text-gray-900">2023-03-25</span>
+                                        </div>
+                                        <div class="mr-3 "><span class="text-sm ">Technical writer, web
+                                                developer, and
+                                                customer success specialist.</span></div>
+                                        <div
+                                            class="mr-3 inline-flex items-center justify-center  text-sm font-light text-center text-black hover:underline hover:underline-offset-2 hover:text-[#F69679]">
+                                            Read More
+                                            <svg class="w-3 h-3 ml-2 " fill="currentColor" viewBox="0 0 20 20"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd"
+                                                    d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                                                    clip-rule="evenodd"></path>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="pt-2">
+                                <a class="flex items-start" href="">
+                                    <div class="mr-3 shrink-0"><img class="object-cover h-24 w-full "
+                                            src="https://images.unsplash.com/photo-1486427944299-d1955d23e34d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+                                            alt=""></div>
+
+                                    <div class="flex flex-col space-y-4 truncate">
+                                        <div class="mr-3 ">
+                                            <span class="block text-sm text-gray-900">2023-03-25</span>
+                                        </div>
+                                        <div class="mr-3 "><span class="text-sm ">Technical writer, web
+                                                developer, and
+                                                customer success specialist.</span></div>
+                                        <div
+                                            class="mr-3 inline-flex items-center justify-center  text-sm font-light text-center text-black hover:underline hover:underline-offset-2 hover:text-[#F69679]">
+                                            Read More
+                                            <svg class="w-3 h-3 ml-2 " fill="currentColor" viewBox="0 0 20 20"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd"
+                                                    d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                                                    clip-rule="evenodd"></path>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="pt-2">
+                                <a class="flex items-start" href="">
+                                    <div class="mr-3 shrink-0"><img class="object-cover h-24 w-full "
+                                            src="https://images.unsplash.com/photo-1679674704818-f3a500c1305b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+                                            alt=""></div>
+
+                                    <div class="flex flex-col space-y-4 truncate">
+                                        <div class="mr-3 ">
+                                            <span class="block text-sm text-gray-900">2023-03-25</span>
+                                        </div>
+                                        <div class="mr-3 "><span class="text-sm ">Technical writer, web
+                                                developer, and
+                                                customer success specialist.</span></div>
+                                        <div
+                                            class="mr-3 inline-flex items-center justify-center  text-sm font-light text-center text-black hover:underline hover:underline-offset-2 hover:text-[#F69679]">
+                                            Read More
+                                            <svg class="w-3 h-3 ml-2 " fill="currentColor" viewBox="0 0 20 20"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd"
+                                                    d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                                                    clip-rule="evenodd"></path>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="pt-2">
+                                <a class="flex items-start" href="">
+                                    <div class="mr-3 shrink-0"><img class="object-cover h-24 w-full "
+                                            src="https://images.unsplash.com/photo-1471967183320-ee018f6e114a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1471&q=80"
+                                            alt=""></div>
+
+                                    <div class="flex flex-col space-y-4 truncate">
+                                        <div class="mr-3 ">
+                                            <span class="block text-sm text-gray-900">2023-03-25</span>
+                                        </div>
+                                        <div class="mr-3 "><span class="text-sm ">Technical writer, web
+                                                developer, and
+                                                customer success specialist.</span></div>
+                                        <div
+                                            class="mr-3 inline-flex items-center justify-center  text-sm font-light text-center text-black hover:underline hover:underline-offset-2 hover:text-[#F69679]">
+                                            Read More
+                                            <svg class="w-3 h-3 ml-2 " fill="currentColor" viewBox="0 0 20 20"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd"
+                                                    d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                                                    clip-rule="evenodd"></path>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+
+
+
+
+
                         </ul>
                     </div>
                 </div>
